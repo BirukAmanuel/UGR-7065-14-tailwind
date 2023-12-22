@@ -4,74 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="achivement.html">Achievements</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="dev-skills.html">Dev Skills</a></li>
+<body class="bg-gray-300">
+    <div>
+        <nav class="p-1 rounded">
+            <ul class="flex justify-end mt-4">
+                <li class="mr-1"><a href="home.html"
+                        class="bg-emerald-800 text-white px-2 py-1 rounded hover:bg-emerald-500 text-xs sm:text-sm md:text-base lg:text-lg">Home</a></li>
+                <li class="mr-1"><a href="aboutme.html"
+                        class="bg-emerald-800 text-white px-2 py-1 rounded hover:bg-emerald-500 text-xs sm:text-sm md:text-base lg:text-lg">AboutMe</a></li>
+                <li class="mr-1"><a href="Achivement.html"
+                        class="bg-emerald-800 text-white px-2 py-1 rounded hover:bg-emerald-500 text-xs sm:text-sm md:text-base lg:text-lg">Achievements</a></li>
+                <li class="mr-1"><a href="education.html"
+                        class="bg-emerald-800 text-white px-2 py-1 rounded hover:bg-emerald-500 text-xs sm:text-sm md:text-base lg:text-lg">Education</a></li>
+                <li><a href="Dev-skills.html"
+                        class="bg-emerald-800 text-white px-2 py-1 rounded hover:bg-emerald-500 text-xs sm:text-sm md:text-base lg:text-lg">DevSkills</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
-    <main>
-        <section>
-            <h1>My Achievements</h1>
-            <ul>
-                <li>Physically Fit</li>
-                <li>Cooking</li>
-                <li>Scored Multiple Bangers in FIFA</li>
-            </ul>
-        </section>
+    <div class="bg-emerald-800 font-bold text-4xl mt-10 mb-14 py-2 rounded-md mx-2">
+        <h1 class="text-gray-50 ml-4">
+            My Achievements
+        </h1>
+    </div>
 
-        <section>
-            <h2>The Goal I Scored with Ronaldo</h2>
-            <video controls src="image/Fifa.mp4" aria-label="My Video"></video>
-        </section>
+    <div>
+        <ul class="list-disc">
+            <li>Physically Fit</li>
+            <li>Cooking</li>
+            <li>Scored Multiple Bangers in FIFA</li>
+        </ul>
+    </div>
 
-        <p>
-            In pursuit of my goal with Ronaldo, the exhilarating moment unfolded in a breathtaking spectacle of skill and
-            precision. Positioned strategically in the penalty area, Ronaldo's anticipation met its pinnacle when an
-            impeccable assist from Douglas Costa materialized. The orchestration of the play was nothing short of
-            perfection. As the ball sailed through the air, seemingly choreographed by an unseen force, Ronaldo soared
-            with an awe-inspiring leap. Time seemed to momentarily freeze as his connection with the ball manifested into
-            a masterful over-head kick. The sheer athleticism, coupled with the synchronized elegance of the play,
-            culminated in a goal that transcended the realm of mere sportsmanship. It became a symphony of artistry on
-            the football field, a testament to the harmonious collaboration between skillful teammates. This goal stands
-            not only as a remarkable achievement but as a living testament to the boundless potential of teamwork and
-            individual brilliance converging in the pursuit of excellence.
-        </p>
+    <div class="font-semibold text-2xl mb-3 mt-4">
+        <h2>The Goal I Scored with Ronaldo</h2>
+    </div>
 
-        <section>
-            <h2>Cooking</h2>
-            <img src="image/cooking.jpg" alt="Cooking Image">
-        </section>
+    <!-- On small screens, the video and paragraph will stack -->
+    <div class="flex flex-col sm:flex-row">
+        <div class="sm:w-1/2 mt-5 ">
+            <!-- Video embed code or video element goes here -->
+            <iframe width="100%" height="315" src="image/Fifa.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="sm:w-1/2 sm:order-2 p-2">
+            <!-- Paragraph content goes here -->
+            <p>
+                In pursuit of my goal with Ronaldo, the exhilarating moment unfolded in a breathtaking spectacle of skill and
+                precision. Positioned strategically in the penalty area, Ronaldo's anticipation met its pinnacle when an
+                impeccable assist from Douglas Costa materialized. The orchestration of the play was nothing short of
+                perfection. As the ball sailed through the air, seemingly choreographed by an unseen force, Ronaldo soared
+                with an awe-inspiring leap. Time seemed to momentarily freeze as his connection with the ball manifested into
+                a masterful over-head kick. The sheer athleticism, coupled with the synchronized elegance of the play,
+                culminated in a goal that transcended the realm of mere sportsmanship. It became a symphony of artistry on
+                the football field, a testament to the harmonious collaboration between skillful teammates. This goal stands
+                not only as a remarkable achievement but as a living testament to the boundless potential of teamwork and
+                individual brilliance converging in the pursuit of excellence.
+            </p>
+        </div>
+    </div>
+    
 
-        <p>
-            Cooking is an artful symphony of flavors, aromas, and textures that transforms simple ingredients into a
-            culinary masterpiece. It is a sensorial journey, where the sizzle of ingredients in a hot pan, the enticing
-            fragrance that wafts through the kitchen, and the vibrant colors of fresh produce come together to create an
-            experience that transcends mere sustenance. In the realm of the kitchen, one becomes a storyteller, weaving
-            tales through the careful selection and harmonious combination of ingredients. Whether experimenting with
-            new recipes or recreating time-honored family traditions, cooking is a dynamic and rewarding process that
-            engages the senses and nurtures both body and soul. It is a communal act, bringing people together around a
-            shared table, where the fruits of labor are savored and memories are made. Cooking is an ever-evolving
-            skill, a source of joy, and a testament to the endless possibilities that arise from the alchemy of culinary
-            creativity.
-        </p>
-    </main>
+    <h2 class="font-semibold text-2xl mb-3 mt-4">Cooking</h2>
+    <img src="image/cooking.jpg" alt="">
+    <p>
+        Cooking is an artful symphony of flavors, aromas, and textures that transforms simple ingredients into a
+        culinary masterpiece. It is a sensorial journey, where the sizzle of ingredients in a hot pan, the enticing
+        fragrance that wafts through the kitchen, and the vibrant colors of fresh produce come together to create an
+        experience that transcends mere sustenance. In the realm of the kitchen, one becomes a storyteller, weaving
+        tales through the careful selection and harmonious combination of ingredients. Whether experimenting with
+        new recipes or recreating time-honored family traditions, cooking is a dynamic and rewarding process that
+        engages the senses and nurtures both body and soul. It is a communal act, bringing people together around a
+        shared table, where the fruits of labor are savored and memories are made. Cooking is an ever-evolving
+        skill, a source of joy, and a testament to the endless possibilities that arise from the alchemy of culinary
+        creativity.
+    </p>
 
-    <footer>
-        &copy; 2023 Biruk Amanuel. All Rights Reserved.
-    </footer>
-
+    <div class="bg-emerald-800 ">
+        <footer class="text-gray-50 flex justify-center">
+            &copy; 2023 Your Biruk Amanuel. All Rights Reserved.
+        </footer>
+    </div>
 </body>
 
 </html>
